@@ -10,9 +10,8 @@ body {
 
 div.contenu {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0px 30px 30px 30px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
     overflow: visible;
 }
@@ -30,7 +29,7 @@ p.description {
     font-size: 14px;
 }
 
-/*Mon commentaire CSS*/
+/* Mon commentaire CSS */
 
 .centre {
     text-align: center;
@@ -38,13 +37,13 @@ p.description {
 }
 
 p.categorie {
-    background-color: black; 
+    background-color: black;
     color: white;
     display: inline-block;
-    margin-top: -15px; 
-    padding: 8px 18px 8px 18px;
+    margin-top: -15px;
+    padding: 8px 18px ;
     margin-bottom: 0px;
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 16px;
 }
 
@@ -55,11 +54,11 @@ div.categorie {
 }
 
 div.separateur {
-    background-color: #6C829D;
-    height: 1px;
     width: 100px;
+    height: 1px;
+    background-color: #6C829D;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;
 }
 
 div.info {
@@ -67,22 +66,22 @@ div.info {
 }
 
 table.info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    background-color: #6C829DC0;
-    height: 80px;
+    position: absolute; 
+    bottom:0; 
+    width: 100%; 
+    color: white; 
+    background-color: #6C829DC0; 
+    height: 50px
 }
 
 table.info td {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
-th {
-    font-size: 16px;
+table.info th {
+    font-size: 14px;
     vertical-align: bottom;
     padding-bottom: 8px;
 }
@@ -96,7 +95,7 @@ img.info {
 }
 
 div.colonne {
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -110,22 +109,15 @@ div.colonne h2 {
 
 div.colonne1 {
     display: inline-block;
-    margin-right: 10%;
-}
-
-div.colonne2 {
-    float: right; 
 }
 
 div.ingredients p {
     text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 1px solid #6C829D;
-    padding: 8px 0px 8px 0px;
     font-size: 14px;
+    border: 1px solid lightgray;
+    padding: 8px 0px;
     margin-top: 4px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 table.preparation p.numero {
@@ -133,13 +125,13 @@ table.preparation p.numero {
     color: white;
     width: 25px;
     height: 25px;
+    text-align: center;
     font-size: 14px;
     font-weight: bold;
-    text-align: center;
     padding-top: 4px;
     box-sizing: border-box;
     border-radius: 50%;
-    margin: 0px;
+    margin: 0;
 }
 
 table.preparation td {
@@ -147,13 +139,55 @@ table.preparation td {
 }
 
 table.preparation td.preparation_etape {
-    padding-left: 10px;
     font-size: 14px;
+    padding-left: 10px;
     padding-bottom: 10px;
 }
 
 table.preparation tr {
     height: 40px;
 }
+
+/* Styles pour ordinateur */
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 350px;
+    }
+
+    table.info {
+        height: 80px
+    }
+    
+    table.info td {
+        font-size: 14px;
+    }
+    
+    table.info th {
+        font-size: 16px;
+    }
+
+    div.colonne {
+        width: 45%;
+    }
+    
+    div.colonne1 {
+        margin-right: 10%;
+    }
+    
+    div.colonne2 {
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }
+}
+
 
 
